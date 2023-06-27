@@ -1,0 +1,46 @@
+$default-font-size: 1rem;
+
+@mixin article-style($color, $border-color, $font-size: $default-font-size) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $color;
+    border: 1px solid $border-color;
+    font-size: $font-size;
+    padding: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: blue ;
+}
+
+div {
+    width: 100%;
+    margin-bottom: 30px;
+    @include article-style(green,red,);
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+.article1 {
+    @include article-style(blue, green);
+}
+
+.article2 {
+    @include article-style(red, green);
+}
+
+.footer {
+    margin-top:10px;
+    width: 1445px;
+    @include article-style(green, blue, 24px);
+}
+
