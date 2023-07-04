@@ -1,0 +1,50 @@
+@import 'components';
+@import 'reset';
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.aside_left {
+    display: flex;
+    flex-direction: column;
+
+    .aside_header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & :first-child{
+            height: 40px;
+            width: 40px;
+            background-color: grey;
+            margin: 20px;
+            
+        }
+
+        & :nth-child(2) {
+            height: 40px;
+            width: 100%;
+            background-color: grey;
+            margin: 20px;
+
+        }
+    }
+
+    .main_header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+
+        div {
+            height: 40px;
+            width: 100%;
+            background-color: grey;
+            
+        }
+    }
+}
+
+
