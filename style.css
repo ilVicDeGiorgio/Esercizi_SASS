@@ -1,0 +1,280 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body > div {
+  margin: 1rem;
+  padding: 1rem;
+  border: solid 1px red;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body > div h1 {
+  color: green;
+  text-decoration: underline blue;
+  margin: 1rem 0;
+  font-weight: bolder;
+}
+body > div h2 {
+  color: green;
+  font-weight: bold;
+  border: solid 1px red;
+  padding: 1rem;
+}
+body > div section:first-of-type {
+  display: flex;
+  margin-top: 1rem;
+}
+body > div section:first-of-type article {
+  border: solid 1px green;
+  color: blue;
+  text-align: center;
+  padding: 1rem;
+}
+body > div section:first-of-type article:nth-child(even) {
+  color: redsass;
+}
+body > div section:nth-of-type(2) {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+  width: 100%;
+}
+body > div section:nth-of-type(2) div {
+  width: 45px;
+  height: 45px;
+  border: solid 1px red;
+}
+body > div section:nth-of-type(2) div:nth-child(1) {
+  background-color: #c6c6c6;
+  color: #0d0d0d;
+}
+body > div section:nth-of-type(2) div:nth-child(2) {
+  background-color: #bababa;
+  color: #1a1a1a;
+}
+body > div section:nth-of-type(2) div:nth-child(3) {
+  background-color: #adadad;
+  color: #262626;
+}
+body > div section:nth-of-type(2) div:nth-child(4) {
+  background-color: #a0a0a0;
+  color: #333333;
+}
+body > div section:nth-of-type(2) div:nth-child(5) {
+  background-color: #939393;
+  color: #404040;
+}
+body > div section:nth-of-type(2) div:nth-child(6) {
+  background-color: #878787;
+  color: #4d4d4d;
+}
+body > div section:nth-of-type(2) div:nth-child(7) {
+  background-color: #7a7a7a;
+  color: #595959;
+}
+body > div section:nth-of-type(2) div:nth-child(8) {
+  background-color: #6d6d6d;
+  color: #666666;
+}
+body > div section:nth-of-type(2) div:nth-child(9) {
+  background-color: #606060;
+  color: #737373;
+}
+body > div section:nth-of-type(2) div:nth-child(10) {
+  background-color: #545454;
+  color: gray;
+  background-color: blue;
+  color: red;
+}
+body > div section:nth-of-type(2) div:nth-child(11) {
+  background-color: #474747;
+  color: #8c8c8c;
+}
+body > div section:nth-of-type(2) div:nth-child(12) {
+  background-color: #3a3a3a;
+  color: #999999;
+}
+body > div section:nth-of-type(2) div:nth-child(13) {
+  background-color: #2d2d2d;
+  color: #a6a6a6;
+}
+body > div section:nth-of-type(2) div:nth-child(14) {
+  background-color: #212121;
+  color: #b3b3b3;
+}
+body > div section:nth-of-type(2) div:nth-child(15) {
+  background-color: #141414;
+  color: #bfbfbf;
+}
+body > div section:nth-of-type(2) div:nth-child(16) {
+  background-color: #070707;
+  color: #cccccc;
+}
+body > div section:nth-of-type(2) div:nth-child(17) {
+  background-color: black;
+  color: #d9d9d9;
+}
+body > div section:nth-of-type(2) div:nth-child(18) {
+  background-color: black;
+  color: #e6e6e6;
+}
+body > div section:nth-of-type(2) div:nth-child(19) {
+  background-color: black;
+  color: #f2f2f2;
+}
+body > div section:nth-of-type(2) div.fs-1rem {
+  font-size: 1rem;
+}
+body > div section:nth-of-type(2) div.fs-2rem {
+  font-size: 2rem;
+}
+body > div section:nth-of-type(2) div.fs-3rem {
+  font-size: 3rem;
+}
+body > div footer {
+  border: solid 1px blue;
+  padding: 2rem;
+  width: 100%;
+  margin: 1rem;
+  text-align: center;
+}
+body > div footer p {
+  color: green;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/* // exercise by Sorrentino - D'arpa - De Giorgio - Natella */

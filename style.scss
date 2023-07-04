@@ -1,0 +1,93 @@
+@import "reset";
+
+$font-sizes: 1rem, 2rem, 3rem;
+$item-bg-color-base: lightgray;
+* {
+  box-sizing: border-box;
+}
+
+body > div {
+  margin: 1rem;
+  padding: 1rem;
+  border: solid 1px red;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    color: green;
+    text-decoration: underline blue;
+    margin: 1rem 0;
+    font-weight: bolder;
+  }
+
+  h2 {
+    color: green;
+    font-weight: bold;
+    border: solid 1px red;
+    padding: 1rem;
+  }
+
+  section:first-of-type {
+    display: flex;
+    margin-top: 1rem;
+
+    article {
+      border: solid 1px green;
+      color: blue;
+      text-align: center;
+      padding: 1rem;
+
+      &:nth-child(even) {
+        color: redsass;
+      }
+    }
+  }
+
+  section:nth-of-type(2) {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    width: 100%;
+
+    div {
+      width: 45px;
+      height: 45px;
+      border: solid 1px red;
+
+      @for $i from 1 to 20 {
+        &:nth-child(#{$i}) {
+          background-color: darken(
+            $color: $item-bg-color-base,
+            $amount: $i * 5%
+          );
+          color: lighten($color: black, $amount: $i * 5%);
+
+          @if $i == 10 {
+            background-color: blue;
+            color: red;
+          }
+        }
+      }
+
+      @each $size in $font-sizes {
+        &.fs-#{$size} {
+          font-size: $size;
+        }
+      }
+    }
+  }
+  footer {
+    border: solid 1px blue;
+    padding: 2rem;
+    width: 100%;
+    margin: 1rem;
+    text-align: center;
+    p {
+      color: green;
+    }
+  }
+}
+
+// // exercise by Sorrentino - D'arpa - De Giorgio - Natella
