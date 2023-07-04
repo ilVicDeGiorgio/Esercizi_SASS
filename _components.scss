@@ -1,0 +1,23 @@
+$default-font-size: 1rem;
+
+$border-ton: solid 1px;
+$color-primary: red;
+$color-secondary: green;
+$color-tertiary: blue;
+$color: yellow;
+
+@mixin mix1($color, $border-color,$direction:column, $font-size:$default-font-size) {
+  text-align: center;
+  color: $color;
+  border: 1px solid $border-color;
+  font-size: $font-size;
+  padding: 1em;
+  // em to impruve the responsivebility
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: $direction;
+  }
+
+

@@ -1,0 +1,7 @@
+@function in-rem($rem-size-unit) {
+  @return calc($rem-size-unit / 16px) * 1rem;
+}
+
+// non grazie a greg !!!!
+
+// esercizio di pairing - by Sorrentino - De Giorgio - D'arpa (team3)

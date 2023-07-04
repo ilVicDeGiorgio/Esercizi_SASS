@@ -1,0 +1,48 @@
+@import "functions.scss";
+@import "components.scss";
+@import "resets.scss";
+
+%HS {
+  text-decoration: underline $color-tertiary;
+}
+
+div {
+  @include mix1($color-secondary, $color-primary);
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+
+  h1 {
+    @extend %HS;
+  }
+  h2 {
+    @extend %HS;
+    padding: in-rem(16px);
+    border: solid red;
+  }
+  section {
+    display: flex;
+    flex-direction: row;
+    padding-top: in-rem(16px);
+
+    article {
+      @include mix1(red, green, row);
+      &:nth-child(odd) {
+        color: blue;
+        &:last-child {
+          color: green;
+        }
+      }
+    }
+  }
+}
+
+//   .article__uno {
+//     @include mix1($color-tertiary, $color-secondary);
+//   }
+//   .article__due {
+//     @include mix1($color-primary, $color-secondary)
+//   }
+// }
+
+// // exercise by Sorrentino - D'arpa - De Giorgio - Natella
